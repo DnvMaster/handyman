@@ -1,5 +1,5 @@
 @extends('handyman.frontend.home_master')
-@section('home')
+@section('handyman')
     @include('handyman.section.cleaning')
     @include('handyman.section.support')
     @include('handyman.section.client')

@@ -21,30 +21,14 @@
         <div class="animation-preloader">
             <div class="spinner"><img src="{{ asset('handyman/frontend/images/loader.gif') }}" alt="{{ __('Загрузка сайта ...' )}}"></div>
             <div class="txt-loading">
-                <span data-text-preloader="H" class="letters-loading">
-                    H
-                </span>
-                <span data-text-preloader="A" class="letters-loading">
-                    A
-                </span>
-                <span data-text-preloader="N" class="letters-loading">
-                    H
-                </span>
-                <span data-text-preloader="D" class="letters-loading">
-                    D
-                </span>
-                <span data-text-preloader="Y" class="letters-loading">
-                    Y
-                </span>
-                <span data-text-preloader="M" class="letters-loading">
-                    M
-                </span>
-                <span data-text-preloader="A" class="letters-loading">
-                    A
-                </span>
-                <span data-text-preloader="N" class="letters-loading">
-                    N
-                </span>
+                <span data-text-preloader=" {{ __('H') }}" class="letters-loading">{{ __('H') }}</span>
+                <span data-text-preloader=" {{ __('A') }}" class="letters-loading">{{ __('A') }}</span>
+                <span data-text-preloader=" {{ __('N') }}" class="letters-loading">{{ __('N') }}</span>
+                <span data-text-preloader=" {{ __('D') }}" class="letters-loading">{{ __('D') }}</span>
+                <span data-text-preloader=" {{ __('Y') }}" class="letters-loading">{{ __('Y') }}</span>
+                <span data-text-preloader=" {{ __('M') }}" class="letters-loading">{{ __('M') }}</span>
+                <span data-text-preloader=" {{ __('A') }}" class="letters-loading">{{ __('A') }}</span>
+                <span data-text-preloader=" {{ __('N') }}" class="letters-loading">{{ __('N') }}</span>
             </div>
         </div>
     </div>
@@ -56,14 +40,11 @@
     @include('handyman.frontend.home.body.scroll_top')
     <div class="cursor"></div>
     <span class="dot"></span>
-   @include('handyman.frontend.home.body.offcanvas')
+    @include('handyman.frontend.home.body.offcanvas')
     @include('handyman.frontend.home.body.mobile_menu')
-
     @include('handyman.frontend.home.body.header')
-
     <div id="scrollSmoother-container">
-        @yield('home')
-
+        @yield('handyman')
         @include('handyman.frontend.home.body.footer')
     </div>
     <script src="{{ asset('handyman/frontend/js/jquery-3.7.1.min.js') }}"></script>
@@ -86,5 +67,4 @@
     <script src="{{ asset('handyman/frontend/js/main.js') }}"></script>
     <script src="{{ asset('handyman/frontend/js/tw-cursor.js') }}"></script>
 </body>
-
 </html>
